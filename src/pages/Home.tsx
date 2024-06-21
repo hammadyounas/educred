@@ -3,7 +3,7 @@ import Features from "../components/features";
 import BlogSection from "../components/blogSection";
 import logo from '../Assets/Images/logo1.png'
 import textImage from '../Assets/Images/EmpowerText.png'
-import { Button, Container, Box, Typography } from "@mui/material";
+import { Button, Container, Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 import image1 from '../Assets/Images/Image 230.png'
 import image2 from '../Assets/Images/Image 233.png'
 import image3 from '../Assets/Images/Image 234.png'
@@ -12,21 +12,24 @@ import image5 from '../Assets/Images/Image 236.png'
 import image6 from '../Assets/Images/Image 237.png'
 import image7 from '../Assets/Images/Container 189.png'
 import image8 from '../Assets/Images/Container 190.png'
-
+import GetStarted from "../components/getStarted";
 
 const Home = () => {
+  const theme = useTheme();
+  const isLargeScreen = useMediaQuery(theme.breakpoints.up('lg')); // Check for large screens using 'lg' breakpoint
+
   return (
     <>
- <Container
+      <Container
         maxWidth="xl"
         style={{
           padding: 0,
           position: 'relative',
           width: '100%',
-          height: '90vh',
+          minHeight: '9s0vh', // Adjusted to full height
           backgroundColor: '#99f3ff',
           display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)',
+          gridTemplateColumns: isLargeScreen ? 'repeat(3, 1fr)' : '1fr', // Adjust grid columns based on screen size
           gridTemplateRows: 'auto 1fr auto',
           gap: '10px',
         }}
@@ -34,7 +37,7 @@ const Home = () => {
         {/* Left Column Images */}
         <Box
           style={{
-            gridRow: '1 / span 3',
+            gridRow: isLargeScreen ? '1 / span 3' : 'auto', // Span all rows on large screens, otherwise auto
             gridColumn: '1 / span 1',
             display: 'flex',
             flexDirection: 'column',
@@ -49,7 +52,7 @@ const Home = () => {
         {/* Center Content */}
         <Box
           style={{
-            gridRow: '1 / span 3',
+            gridRow: isLargeScreen ? '1 / span 3' : 'auto', // Span all rows on large screens, otherwise auto
             gridColumn: '2 / span 1',
             display: 'flex',
             flexDirection: 'column',
@@ -58,11 +61,11 @@ const Home = () => {
           }}
         >
           <Box sx={{ paddingTop: 5 }}>
-            <img src={logo} alt="Logo" style={{ height: 150 }} />
-            <img src={textImage} alt="Text" style={{ marginTop: 30 }} />
+            <img src={logo} alt="Logo" style={{ height: isLargeScreen ? 150 : 100 }} /> {/* Adjust logo height based on screen size */}
+            <Box component="img" src={textImage} alt="Text" sx={{ width: '100%', marginTop: '2' }} />
           </Box>
           <Box sx={{ marginTop: 3 }}>
-            <Button variant="contained" sx={{ color: '#00BDD6', bgcolor: 'white', textTransform: 'capitalize', borderRadius: 23, paddingX: 8 }}>
+            <Button variant="contained" sx={{ color: '#00BDD6', bgcolor: 'white', textTransform: 'capitalize', borderRadius: 23, paddingX: {lg: 8, xs: 4} }}>
               Signup
             </Button>
           </Box>
@@ -71,7 +74,7 @@ const Home = () => {
         {/* Right Column Images */}
         <Box
           style={{
-            gridRow: '1 / span 3',
+            gridRow: isLargeScreen ? '1 / span 3' : 'auto', // Span all rows on large screens, otherwise auto
             gridColumn: '3 / span 1',
             display: 'flex',
             flexDirection: 'column',
@@ -98,10 +101,13 @@ const Home = () => {
         </Box>
       </Container>
       
-    <div>
+      {/* Features Section */}
       <Features />
+      
+      {/* Blog Section */}
       <BlogSection />
-    </div>
+
+  <GetStarted />
     </>
   );
 };

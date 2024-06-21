@@ -15,7 +15,8 @@ import AdbIcon from '@mui/icons-material/Adb';
 import logo from '../../Assets/Images/logo.png'; 
 
 const pages = ['Features', 'About us', 'Contact us', 'FAQs'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const settings = ['Features', 'About us', 'Contact us', 'FAQs', 'Login', 'Signup'];
+// const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -130,7 +131,7 @@ function Header() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {pages.map((setting) => (
+              {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>

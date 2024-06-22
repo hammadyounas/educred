@@ -24,6 +24,7 @@ import GetStarted from "../components/getStarted";
 import AboutSection from "../components/aboutSection";
 import Header from "../components/common/Header";
 import { useNavigate } from "react-router-dom";
+import Footer from "../components/common/Footer";
 
 const Home = () => {
   const theme = useTheme();
@@ -163,6 +164,9 @@ const Home = () => {
       <BlogSection />
 
       <GetStarted />
+
+      {/* Footer */}
+      <Footer />
     </>
   );
 };

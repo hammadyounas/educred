@@ -18,8 +18,8 @@ import {
 // import image4 from "../assets/images/Image 235.png";
 // import image5 from "../assets/images/Image 236.png";
 // import image6 from "../assets/images/Image 237.png";
-// import image7 from "../assets/images/Container 189.png";
-// import image8 from "../assets/images/Container 190.png";
+import image7 from "../assets/images/Container 189.png";
+import image8 from "../assets/images/Container 190.png";
 import GetStarted from "../components/getStarted";
 import AboutSection from "../components/aboutSection";
 import Header from "../components/common/Header";
@@ -58,7 +58,7 @@ const Home = () => {
           }}
         >
           <img
-            src="/container190.png"
+            src={image8}
             alt="Image 1"
             style={{ width: "20%", marginBottom: "30px" }}
           />
@@ -127,7 +127,7 @@ const Home = () => {
             style={{ width: "30%", marginBottom: "10px" }}
           />
           <img
-            src="/container189.png"
+            src={image7}
             alt="Image 7"
             style={{ width: "15%", marginBottom: "10px" }}
           />

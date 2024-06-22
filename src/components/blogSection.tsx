@@ -12,9 +12,9 @@ import {
 } from "@mui/material";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import blogimageone from "../Assets/Images/blogimageone.png";
-import blogimagetwo from "../Assets/Images/blogimagetwo.png";
-import blogimagethree from "../Assets/Images/blogimagethree.png";
+import blogimageone from "../assets/images/blogimageone.png";
+import blogimagetwo from "../assets/images/blogimagetwo.png";
+import blogimagethree from "../assets/images/blogimagethree.png";
 
 const BlogSection: React.FC = () => {
   return (

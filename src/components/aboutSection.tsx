@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Button, Grid, Typography } from '@mui/material'; // Importing Box and Grid from MUI for layout
-import about from '../Assets/Images/about.png';
-import aboutImage from '../Assets/Images/aboutImage.png'
+import about from '../assets/images/about.png';
+import aboutImage from '../assets/images/aboutImage.png'
 
 export default function AboutSection() {
   return (

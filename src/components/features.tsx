@@ -1,9 +1,9 @@
 import React from "react";
 import { Grid, Card, CardContent, Typography, Link, Box } from "@mui/material";
-import request from "../Assets/Images/request.png";
-import credentials from "../Assets/Images/credentials.png";
-import jobs from "../Assets/Images/jobs.png";
-import verfication from "../Assets/Images/verification.png";
+import request from "../assets/images/request.png";
+import credentials from "../assets/images/credentials.png";
+import jobs from "../assets/images/jobs.png";
+import verfication from "../assets/images/verification.png";
 
 const Features = () => {
   return (

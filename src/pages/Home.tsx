@@ -1,8 +1,8 @@
 import React from "react";
 import Features from "../components/features";
 import BlogSection from "../components/blogSection";
-import logo from "../Assets/Images/logo1.png";
-import textImage from "../Assets/Images/EmpowerText.png";
+import logo from "../assets/images/logo1.png";
+import textImage from "../assets/images/EmpowerText.png";
 import {
   Button,
   Container,
@@ -11,14 +11,14 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import image1 from "../Assets/Images/Image 230.png";
-import image2 from "../Assets/Images/Image 233.png";
-import image3 from "../Assets/Images/Image 234.png";
-import image4 from "../Assets/Images/Image 235.png";
-import image5 from "../Assets/Images/Image 236.png";
-import image6 from "../Assets/Images/Image 237.png";
-import image7 from "../Assets/Images/Container 189.png";
-import image8 from "../Assets/Images/Container 190.png";
+import image1 from "../assets/images/Image 230.png";
+import image2 from "../assets/images/Image 233.png";
+import image3 from "../assets/images/Image 234.png";
+import image4 from "../assets/images/Image 235.png";
+import image5 from "../assets/images/Image 236.png";
+import image6 from "../assets/images/Image 237.png";
+import image7 from "../assets/images/Container 189.png";
+import image8 from "../assets/images/Container 190.png";
 import GetStarted from "../components/getStarted";
 import AboutSection from "../components/aboutSection";
 

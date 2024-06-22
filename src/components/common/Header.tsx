@@ -12,7 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import logo from "../../assets/images/logo.png";
+// import logo from "../../assets/images/logo.png";
 import { useNavigate } from "react-router-dom";
 
 
@@ -68,7 +68,7 @@ function Header() {
             <Box sx={{ display: "flex", alignItems: "center" }}>
               <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
               <img
-                src={logo}
+                src="/logo.png"
                 alt="Logo"
                 style={{ height: 40, marginRight: 10 }}
               />

@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Box, Button, Typography, Grid } from "@mui/material";
-import onboarding from '../assets/images/signupBanner.png';
+// import onboarding from '../assets/images/signupBanner.png';
 import EmailIcon from "@mui/icons-material/Email";
 import GoogleIcon from "@mui/icons-material/Google";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -35,7 +35,7 @@ const Login: React.FC = () => {
             justifyContent: { xs: "center", md: "flex-start" },
           }}
         >
-          <img src={onboarding} alt="EduCred Logo" />
+          <img src="/onboarding.png" alt="EduCred Logo" />
         </Grid>
         <Grid
           item

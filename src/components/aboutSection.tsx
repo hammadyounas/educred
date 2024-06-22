@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Button, Grid, Typography } from '@mui/material'; // Importing Box and Grid from MUI for layout
-import about from '../assets/images/about.png';
+// import about from '../assets/images/about.png';
 // import aboutImage from '../assets/images/aboutImage.png'
 
 export default function AboutSection() {
@@ -16,7 +16,7 @@ export default function AboutSection() {
             <Typography variant="h3" component="div" gutterBottom sx={{ fontWeight: 'bold' }}>
               About Us
             </Typography>
-              <img src={about} alt="About Us Image" style={{ maxWidth: '40%', height: 'auto' }} />
+              <img src="/about.png" alt="About Us Image" style={{ maxWidth: '40%', height: 'auto' }} />
             <Typography variant="body1" paragraph sx={{color: '#323842', fontSize: { lg: '1rem', xs: '0.8rem', paddingTop: '1rem' } }}>
             At EduCred, we believe in the power of verified credentials to unlock your future potential. Our mission is to create a secure, reliable, and user-friendly platform that bridges the gap between education and employment. With EduCred, students can seamlessly request their transcripts, have them verified by institutions, and generate verifiable digital credentials using advanced natural language processing and blockchain technology.
             </Typography>

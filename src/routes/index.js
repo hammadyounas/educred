@@ -4,6 +4,8 @@ import SignUpWithEmail from "../pages/SignUpWithEmail";
 import SignUp from "../pages/SignUp";
 import Login from "../pages/Login";
 import LoginWithEmail from "../pages/LoginWithEmail";
+import Profile from "../pages/Profile";
+import Settings from "../pages/Settings";
 
 export const router = createBrowserRouter([
   {
@@ -26,4 +28,12 @@ export const router = createBrowserRouter([
     path: "login/email",
     element: <LoginWithEmail />,
   },
+  {
+    path: "/profile",
+    element: <Profile />,
+  },
+  {
+    path: "/settings",
+    element: <Settings />
+  }
 ]);

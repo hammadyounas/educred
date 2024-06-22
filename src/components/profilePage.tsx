@@ -46,14 +46,14 @@ const ProfilePage: React.FC = () => {
   return (
     <>
     <ProfileContainer>
-      <Grid container spacing={3}>
-        <Grid item xs={12} md={4}>
+      <Grid container spacing={3} sx={{paddingLeft: {md:'2rem'}, paddingRight: {md:'2rem'}, paddingTop: '2rem'}}>
+        <Grid item xs={12} md={3}>
             <ProfileCard/>
             <Grid sx={{mt:6}}>
                 <JobCard/>
             </Grid>
         </Grid>
-        <Grid item xs={12} md={8}>
+        <Grid item xs={12} md={9}>
           <AnalyticsBox>
             <Analytics/>
           </AnalyticsBox>

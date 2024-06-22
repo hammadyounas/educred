@@ -11,9 +11,9 @@ const data = [
 ];
 
 const AnalyticsCard: React.FC<{ title: string, value: number, description: string, Icon: React.ReactNode }> = ({ title, value, description, Icon }) => (
-  <Card>
+  <Card sx={{ height: '100%' }}>
     <CardContent>
-      <Grid container alignItems="center">
+      <Grid container alignItems="center" justifyContent="center" style={{ height: '100%' }}>
         <Grid item xs={2}>
           {Icon}
         </Grid>
@@ -32,24 +32,24 @@ const Analytics: React.FC = () => {
     <Box p={3}>
       <Grid container justifyContent="space-between" alignItems="center">
         <Grid item>
-          <Typography variant="h5" gutterBottom>
+          <Typography variant="h5" gutterBottom fontWeight={'bold'}>
             Analytics this month
           </Typography>
         </Grid>
         <Grid item>
           <Grid container alignItems="center">
-            <LockIcon fontSize="small" />
-            <Typography variant="body2" style={{ marginLeft: 4 }}>
+            <LockIcon fontSize="small" style={{color: '#9095a0'}} />
+            <Typography variant="body2" style={{ marginLeft: 4 , color: '#9095a0'}}>
               Private to you
             </Typography>
           </Grid>
         </Grid>
       </Grid>
-      <Grid container spacing={3}>
+      <Grid container spacing={3} style= {{ marginTop: 4 }}>
         <Grid item xs={12} sm={6} md={3}>
-          <Card>
+          <Card sx={{ height: '100%',  boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)' }}>
             <CardContent>
-              <Typography variant="h6">Profile views</Typography>
+              <Typography variant="h6" fontWeight={'bold'} fontSize="1rem" paddingBottom={'10px'}>Profile views</Typography>
               <ResponsiveContainer width="100%" height={100}>
                 <BarChart data={data}>
                   <CartesianGrid strokeDasharray="3 3" />
@@ -62,29 +62,62 @@ const Analytics: React.FC = () => {
             </CardContent>
           </Card>
         </Grid>
+
+        {/* viewers */}
         <Grid item xs={12} sm={6} md={3}>
-          <AnalyticsCard
-            title="200 viewers"
-            value={200}
-            description="Amet eiusmod"
-            Icon={<span role="img" aria-label="viewers">👥</span>}
-          />
+          <Card sx={{ height: '100%', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)' }}>
+            <CardContent>
+              <Grid container alignItems="center" spacing={1}>
+                <Grid item xs={12}>
+                  <img src="./viewers.png" alt="Analytics Icon" width="30" />
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography variant="h6" fontWeight={'bold'} fontSize={'1rem'}>200 viewers</Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography variant="body2" color="textSecondary">Amet eiusmod</Typography>
+                </Grid>
+              </Grid>
+            </CardContent>
+          </Card>
         </Grid>
-        <Grid item xs={12} sm={6} md={3}>
-          <AnalyticsCard
-            title="100 Impressions"
-            value={100}
-            description="Amet eiusmod"
-            Icon={<span role="img" aria-label="impressions">⭐</span>}
-          />
+
+      {/* impressions */}
+      <Grid item xs={12} sm={6} md={3}>
+          <Card sx={{ height: '100%', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)' }}>
+            <CardContent>
+              <Grid container alignItems="center" spacing={1}>
+                <Grid item xs={12}>
+                  <img src="./impressions.png" alt="Analytics Icon" width="30" />
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography variant="h6" fontWeight={'bold'} fontSize={'1rem'}>100 Impressions</Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography variant="body2" color="textSecondary">Amet eiusmod</Typography>
+                </Grid>
+              </Grid>
+            </CardContent>
+          </Card>
         </Grid>
+
+        {/* Searches */}
         <Grid item xs={12} sm={6} md={3}>
-          <AnalyticsCard
-            title="70 Searches"
-            value={70}
-            description="Amet eiusmod"
-            Icon={<span role="img" aria-label="searches">🔍</span>}
-          />
+          <Card sx={{ height: '100%', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)' }}>
+            <CardContent>
+              <Grid container alignItems="center" spacing={1}>
+                <Grid item xs={12}>
+                  <img src="./searches.png" alt="Analytics Icon" width="30" />
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography variant="h6" fontWeight={'bold'} fontSize={'1rem'}>70 Searches</Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography variant="body2" color="textSecondary">Amet eiusmod</Typography>
+                </Grid>
+              </Grid>
+            </CardContent>
+          </Card>
         </Grid>
       </Grid>
     </Box>

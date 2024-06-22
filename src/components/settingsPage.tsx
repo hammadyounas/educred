@@ -189,7 +189,7 @@ const SettingsPage: React.FC = () => {
                           readOnly
                           sx={{ flex: 1, paddingX: 1 }}
                         />
-                        <IconButton color="primary" component="span">
+                        <IconButton sx={{color:"#4e5055"}} component="span">
                           <ContentCopy />
                         </IconButton>
                       </Box>

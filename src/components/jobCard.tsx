@@ -19,9 +19,9 @@ const JobCard: React.FC = () => {
         }}>
           <CardContent>
             <Box sx={{ display: 'flex', justifyContent: 'center', mb: 2 }}>
-              <img src='/logo.png' alt="Job search" width={200} height={200} style={{ maxWidth: '100%', height: 'auto' }} />
+              <img src='/jobCard.png' alt="Job search" width={200} height={200} style={{ maxWidth: '100%', height: 'auto' }} />
             </Box>
-            <Typography variant="h5" sx={{ color: '#8353E2', fontWeight: 500, marginBottom: '20px' }}>
+            <Typography variant="h6" sx={{ color: '#8353E2', fontWeight: 500, marginBottom: '20px', marginTop: '30px' }}>
               Looking for new job?
             </Typography>
             <Button 
@@ -29,6 +29,10 @@ const JobCard: React.FC = () => {
               sx={{ 
                 backgroundColor: '#8353E2', 
                 color: '#fff', 
+                fontSize: '0.8rem',
+                paddingLeft: '30px',
+                paddingRight: '30px',
+                textTransform: 'capitalize',
                 '&:hover': { backgroundColor: '#6f3acb' } 
               }}
             >

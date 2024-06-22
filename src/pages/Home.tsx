@@ -1,7 +1,7 @@
 import React from "react";
 import Features from "../components/features";
 import BlogSection from "../components/blogSection";
-import logo from "../assets/images/logoOne.png";
+import logoImage from "../assets/images/logoOne.png";
 import textImage from "../assets/images/EmpowerText.png";
 import {
   Button,
@@ -78,7 +78,7 @@ const Home = () => {
         >
           <Box sx={{ paddingTop: 5 }}>
             <img
-              src={logo}
+              src={logoImage}
               alt="Logo"
               style={{ height: isLargeScreen ? 150 : 100 }}
             />{" "}

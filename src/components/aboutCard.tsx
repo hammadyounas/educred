@@ -1,11 +1,12 @@
 // AboutCard.tsx
 import React from 'react';
-import { Box, Grid, Typography, Chip, Stack } from '@mui/material';
+import { Box, Grid, Typography, Chip, Stack, Container } from '@mui/material';
 import WorkIcon from '@mui/icons-material/Work';
 
 const AboutCard: React.FC = () => {
   return (
     <Box sx={{ padding: 2, border: '1px solid #e0e0e0', borderRadius: 2, height: '150px' }}>
+      <Container >
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Stack direction="row" alignItems="center" spacing={1} sx={{}}>
@@ -25,6 +26,7 @@ const AboutCard: React.FC = () => {
           </Typography>
         </Grid>
       </Grid>
+      </Container>
     </Box>
   );
 };

@@ -7,7 +7,7 @@ const WorkExperience: React.FC = () => {
     <Container>
       <Grid container spacing={2}>
         <Grid item xs={12}>
-          <Typography variant="h4" gutterBottom>
+          <Typography variant="h6" gutterBottom sx={{ fontWeight: 'bold', mb: 2 }}>
             Working Experience
           </Typography>
         </Grid>
@@ -17,7 +17,7 @@ const WorkExperience: React.FC = () => {
             company="Bytedance"
             duration="Jan 2021 - Present · 1 yr 7 mos"
             description="Lorem ipsum dolor sit amet, consectetur elit. Diam, pellentesque dignissim eu vivamus donec erat."
-            imageUrl="https://via.placeholder.com/60"
+            imageUrl="./experienceOne.png"
             isWorking={true}
           />
         </Grid>
@@ -27,7 +27,7 @@ const WorkExperience: React.FC = () => {
             company="ConocoPhillips"
             duration="Aug 2018 - Nov 2020 · 2 yrs 4 mos"
             description="Lorem ipsum dolor sit amet, consectetur elit. Diam, pellentesque dignissim eu vivamus donec erat."
-            imageUrl="https://via.placeholder.com/60"
+            imageUrl="./experienceTwo.png"
           />
         </Grid>
         <Grid item xs={12}>
@@ -36,7 +36,7 @@ const WorkExperience: React.FC = () => {
             company="Brex"
             duration="Jun 2017 - May 2018 · 1 yr"
             description="Lorem ipsum dolor sit amet, consectetur elit. Diam, pellentesque dignissim eu vivamus donec erat."
-            imageUrl="https://via.placeholder.com/60"
+            imageUrl="./experienceThree.png"
           />
         </Grid>
       </Grid>

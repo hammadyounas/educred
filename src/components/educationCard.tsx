@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Card, CardContent, Grid, Typography, Avatar, Chip } from '@mui/material';
+import { Box, Card, CardContent, Grid, Typography, Avatar, Chip, Container } from '@mui/material';
 import SchoolIcon from '@mui/icons-material/School';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
@@ -8,6 +8,7 @@ import { BookmarkAddOutlined, SchoolOutlined } from '@mui/icons-material';
 const EducationCard: React.FC = () => {
   return (
     <Card sx={{ margin: 'auto', mt: 5, border: '1px solid #E0E0E0', borderRadius: 2 }}>
+      <Container >
       <CardContent>
         <Typography variant="h6" component="div" sx={{ fontWeight: 'bold', mb: 2 }}>
           Education
@@ -44,6 +45,7 @@ const EducationCard: React.FC = () => {
           </Grid>
         </Grid>
       </CardContent>
+    </Container>
     </Card>
   );
 };

@@ -3,7 +3,7 @@ import Features from "../components/features";
 import BlogSection from "../components/blogSection";
 // import bigLogo from "../assets/images/bigLogo.png";
 // import bigLogo from "../../public/bigLogo.png";
-import textImage from "../assets/images/EmpowerText.png";
+// import textImage from "../assets/images/EmpowerText.png";
 import {
   Button,
   Container,
@@ -86,7 +86,7 @@ const Home = () => {
             {/* Adjust logo height based on screen size */}
             <Box
               component="img"
-              src={textImage}
+              src="/empowerText.png"
               alt="Text"
               sx={{ width: "100%", marginTop: "2" }}
             />

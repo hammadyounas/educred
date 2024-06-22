@@ -12,9 +12,9 @@ import {
 } from "@mui/material";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import blogimageone from "../assets/images/blogimageone.png";
-import blogimagetwo from "../assets/images/blogimagetwo.png";
-import blogimagethree from "../assets/images/blogimagethree.png";
+// import blogimageone from "../assets/images/blogimageone.png";
+// import blogimagetwo from "../assets/images/blogimagetwo.png";
+// import blogimagethree from "../assets/images/blogimagethree.png";
 
 const BlogSection: React.FC = () => {
   return (
@@ -76,7 +76,7 @@ const BlogSection: React.FC = () => {
                     <CardMedia
                       component="img"
                       height="140"
-                      image={blogimageone}
+                      image="/blogimageone.png"
                       alt="Image 1"
                     />
                     <CardContent>
@@ -140,7 +140,7 @@ const BlogSection: React.FC = () => {
                     <CardMedia
                       component="img"
                       height="140"
-                      image={blogimagetwo}
+                      image="/blogimagetwo.png"
                       alt="Image 1"
                     />
                     <CardContent>
@@ -204,7 +204,7 @@ const BlogSection: React.FC = () => {
                     <CardMedia
                       component="img"
                       height="140"
-                      image={blogimagethree}
+                      image="/blogimagethree.png"
                       alt="Image 1"
                     />
                     <CardContent>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Button, Grid, Typography } from '@mui/material'; // Importing Box and Grid from MUI for layout
 import about from '../assets/images/about.png';
-import aboutImage from '../assets/images/aboutImage.png'
+// import aboutImage from '../assets/images/aboutImage.png'
 
 export default function AboutSection() {
   return (
@@ -29,7 +29,7 @@ export default function AboutSection() {
         {/* Right Side: Image */}
         <Grid item xs={12} md={7}>
           <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <img src={aboutImage} alt="About Us Image" style={{ width: '50%', height: 'auto' }} />
+            <img src='/aboutImage.png' alt="About Us Image" style={{ width: '50%', height: 'auto' }} />
           </Box>
         </Grid>
       </Grid>

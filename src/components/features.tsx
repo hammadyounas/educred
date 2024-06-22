@@ -1,9 +1,9 @@
 import React from "react";
 import { Grid, Card, CardContent, Typography, Link, Box } from "@mui/material";
-import request from "../assets/images/request.png";
-import credentials from "../assets/images/credentials.png";
-import jobs from "../assets/images/jobs.png";
-import verfication from "../assets/images/verification.png";
+// import request from "../assets/images/request.png";
+// import credentials from "../assets/images/credentials.png";
+// import jobs from "../assets/images/jobs.png";
+// import verfication from "../assets/images/verification.png";
 
 const Features = () => {
   return (
@@ -69,7 +69,7 @@ const Features = () => {
                   </Link>
                 </div>
                 <img
-                  src={request}
+                  src="/request.png"
                   alt="Image 5"
                   style={{
                     width: "20%",
@@ -136,7 +136,7 @@ const Features = () => {
                   }}
                 >
                   <img
-                    src={credentials}
+                    src="/credentials.png"
                     alt="Jobs Image"
                     style={{ width: "90%", maxWidth: "150px" }}
                   />
@@ -200,7 +200,7 @@ const Features = () => {
                   }}
                 >
                   <img
-                    src={jobs}
+                    src="/jobs.png"
                     alt="Jobs Image"
                     style={{ width: "90%", maxWidth: "150px" }}
                   />
@@ -256,7 +256,7 @@ const Features = () => {
                   </Link>
                 </div>
                 <img
-                  src={verfication}
+                  src="/verification.png"
                   alt="Image 5"
                   style={{
                     width: "20%",

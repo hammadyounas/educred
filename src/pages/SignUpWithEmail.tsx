@@ -15,7 +15,7 @@ import {
   LockOutlined,
 } from "@mui/icons-material";
 import { useState } from "react";
-import onboarding from "../assets/images/signupBanner.png";
+// import onboarding from "../assets/images/signupBanner.png";
 import CustomTextField from "../components/common/Input";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -84,7 +84,7 @@ const SignUpWithEmail: React.FC = () => {
             justifyContent: { xs: "center", md: "flex-start" },
           }}
         >
-          <img src={onboarding} alt="EduCred Logo" />
+          <img src="/onboarding.png" alt="EduCred Logo" />
         </Grid>
         <Grid
           item

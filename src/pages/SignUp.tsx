@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Box, Button, Typography, Grid } from "@mui/material";
-import onboarding from "../assets/images/signup-banner.png";
+import onboarding from "../assets/images/signupBanner.png";
 import EmailIcon from "@mui/icons-material/Email";
 import GoogleIcon from "@mui/icons-material/Google";
 import FacebookIcon from "@mui/icons-material/Facebook";

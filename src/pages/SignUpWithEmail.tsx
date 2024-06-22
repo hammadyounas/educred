@@ -15,7 +15,7 @@ import {
   LockOutlined,
 } from "@mui/icons-material";
 import { useState } from "react";
-import onboarding from "../assets/images/signup-banner.png";
+import onboarding from "../assets/images/signupBanner.png";
 import CustomTextField from "../components/common/Input";
 import { Link, useNavigate } from "react-router-dom";
 

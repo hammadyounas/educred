@@ -3,13 +3,14 @@ import { Tabs, Tab, Grid, Paper, Typography, Box } from '@mui/material';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import WorkIcon from '@mui/icons-material/Work';
+import { BookmarkAddOutlined, LanOutlined } from '@mui/icons-material';
 
 const useStyles = {
   verified: {
     backgroundColor: '#F1F4FD',
     color: '#4069E5',
-    padding: '2px 8px',
-    borderRadius: '4px',
+    padding: '4px 10px',
+    borderRadius: '15px',
     display: 'flex',
     alignItems: 'center',
     marginLeft: '8px',
@@ -17,8 +18,8 @@ const useStyles = {
   workExperience: {
     backgroundColor: '#F5F2FD',
     color: '#8353E2',
-    padding: '2px 8px',
-    borderRadius: '4px',
+    padding: '4px 15px',
+    borderRadius: '15px',
     display: 'flex',
     alignItems: 'center',
     marginLeft: '8px',
@@ -26,11 +27,13 @@ const useStyles = {
   skillItem: {
     display: 'flex',
     alignItems: 'center',
-    marginBottom: '16px',
+    marginBottom: '14px',
+    fontSize: '0.9rem'
   },
   icon: {
     color: '#00BDD6',
     marginRight: '8px',
+    fontSize: '1.1rem'
   },
   tabsRoot: {
     minHeight: '48px',
@@ -40,12 +43,13 @@ const useStyles = {
     minWidth: 0,
     minHeight: 0,
     padding: '0 16px',
-    fontSize: '14px',
+    fontSize: '0.8rem',
     '&.Mui-selected': {
-      fontSize: '18px',
+      fontSize: '14px',
+      padding: '4px 20px',
       backgroundColor: '#00BDD6',
       color: '#FFFFFF',
-      borderRadius: '8px',
+      borderRadius: '15px',
     },
     // '&:hover': {
     //   color: '#00BDD6',
@@ -72,7 +76,7 @@ const SkillCard: React.FC = () => {
 
   return (
     <Paper elevation={0} style={{ padding: '16px', border: 'none', boxShadow: 'none' }}>
-      <Typography variant="h6" style={{ fontWeight: 'bold' }} gutterBottom>
+      <Typography variant="h6" style={{ fontWeight: 'bold', marginBottom: '1.5rem' }} gutterBottom>
         Skill
       </Typography>
       <Tabs
@@ -94,13 +98,13 @@ const SkillCard: React.FC = () => {
               <Typography variant="body1">{skill.name}</Typography>
               {skill.verified && (
                 <Box style={useStyles.verified}>
-                  <VerifiedIcon fontSize="small" />
+                  <BookmarkAddOutlined fontSize="small" />
                   <Typography variant="caption" style={{ marginLeft: '4px' }}>Verified</Typography>
                 </Box>
               )}
               {skill.workExperience && (
                 <Box style={useStyles.workExperience}>
-                  <WorkIcon fontSize="small" />
+                  <LanOutlined fontSize="small" />
                   <Typography variant="caption" style={{ marginLeft: '4px' }}>Work Experience</Typography>
                 </Box>
               )}

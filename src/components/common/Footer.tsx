@@ -184,7 +184,7 @@ export default function Footer() {
 
           {/* Copyright text */}
       </Grid>
-      <Grid item xs={12} md={4} container alignItems="center" justifyContent="space-between" spacing={2}>
+      <Grid item xs={12} md={4} container alignItems="center" justifyContent="space-between" spacing={2} sx = {{marginTop: {xs: '10px', md: '0px'}}}>
         <Typography variant="body2" sx={{ color: 'black' }}>
           © 2022 EduCred, Inc.
         </Typography>
@@ -202,7 +202,7 @@ export default function Footer() {
 
 
         {/* Right side: Social media icons */}
-        <Grid item xs={12} md={4} container justifyContent="flex-end" spacing={2}>
+        <Grid item xs={12} md={4} container justifyContent="flex-end" spacing={2} sx = {{marginTop: {xs: '5px', md: '0px'}}}>
           <Grid item>
             <IconButton sx = {{color: "#e82e2e"}}>
               <YouTube />

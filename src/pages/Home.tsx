@@ -2,6 +2,7 @@ import React from "react";
 import Features from "../components/features";
 import BlogSection from "../components/blogSection";
 import bigLogo from "../assets/images/bigLogo.png";
+// import bigLogo from "../../public/bigLogo.png";
 import textImage from "../assets/images/EmpowerText.png";
 import {
   Button,

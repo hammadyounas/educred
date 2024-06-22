@@ -1,7 +1,7 @@
 import React from "react";
 import Features from "../components/features";
 import BlogSection from "../components/blogSection";
-import logo from "../assets/images/logo1.png";
+import logo from "../assets/images/logoOne.png";
 import textImage from "../assets/images/EmpowerText.png";
 import {
   Button,

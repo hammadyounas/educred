@@ -21,13 +21,17 @@ import image7 from "../assets/images/Container 189.png";
 import image8 from "../assets/images/Container 190.png";
 import GetStarted from "../components/getStarted";
 import AboutSection from "../components/aboutSection";
+import Header from "../components/common/Header";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const theme = useTheme();
   const isLargeScreen = useMediaQuery(theme.breakpoints.up("lg")); // Check for large screens using 'lg' breakpoint
+  const navigate = useNavigate();
 
   return (
     <>
+      <Header />
       <Container
         maxWidth="xl"
         style={{

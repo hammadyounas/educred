@@ -13,6 +13,8 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import logo from "../../assets/images/logo.png";
+import { useNavigate } from "react-router-dom";
+
 
 const pages = ["Features", "About us", "Contact us", "FAQs"];
 const settings = [
@@ -26,6 +28,8 @@ const settings = [
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Header() {
+  const navigate = useNavigate();
+
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
@@ -98,6 +102,7 @@ function Header() {
             >
               <Button
                 sx={{ color: "#00BDD6", mr: 2, textTransform: "capitalize" }}
+                onClick={() => navigate("/login")}
               >
                 Login
               </Button>

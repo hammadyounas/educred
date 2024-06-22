@@ -6,7 +6,7 @@ import Header from "./components/common/Header";
 const App: React.FC = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <RouterProvider router={router} />
     </>
   );

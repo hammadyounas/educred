@@ -4,6 +4,9 @@ import SignUpWithEmail from "../pages/SignUpWithEmail";
 import SignUp from "../pages/SignUp";
 import Login from "../pages/Login";
 import LoginWithEmail from "../pages/LoginWithEmail";
+import CreateProfile from "../pages/CreateProfile";
+import Credentials from "../pages/Credentials";
+import CredentialsList from "../pages/CredentialsList";
 import Profile from "../pages/Profile";
 import Settings from "../pages/Settings";
 
@@ -29,11 +32,23 @@ export const router = createBrowserRouter([
     element: <LoginWithEmail />,
   },
   {
+    path: "profile/create",
+    element: <CreateProfile />,
+  },
+  {
+    path: "credentials/create",
+    element: <Credentials />,
+  },
+  {
+    path: "credentials/list",
+    element: <CredentialsList />,
+  },
+  {
     path: "/profile",
     element: <Profile />,
   },
   {
     path: "/settings",
-    element: <Settings />
+    element: <Settings />,
   }
 ]);

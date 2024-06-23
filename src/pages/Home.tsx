@@ -24,6 +24,7 @@ import GetStarted from "../components/getStarted";
 import AboutSection from "../components/aboutSection";
 import Header from "../components/common/Header";
 import { useNavigate } from "react-router-dom";
+import Footer from "../components/common/Footer";
 
 const Home = () => {
   const theme = useTheme();
@@ -39,7 +40,7 @@ const Home = () => {
           padding: 0,
           position: "relative",
           width: "100%",
-          minHeight: "9s0vh", // Adjusted to full height
+          maxHeight: "90vh", // Adjusted to full height
           backgroundColor: "#99f3ff",
           display: "grid",
           gridTemplateColumns: isLargeScreen ? "repeat(3, 1fr)" : "1fr", // Adjust grid columns based on screen size
@@ -163,6 +164,9 @@ const Home = () => {
       <BlogSection />
 
       <GetStarted />
+
+      {/* Footer */}
+      <Footer />
     </>
   );
 };

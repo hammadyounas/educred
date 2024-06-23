@@ -43,11 +43,12 @@ export const router = createBrowserRouter([
     path: "credentials/list",
     element: <CredentialsList />,
   },
+  {
     path: "/profile",
     element: <Profile />,
   },
   {
     path: "/settings",
-    element: <Settings />
+    element: <Settings />,
   }
 ]);

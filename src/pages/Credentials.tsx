@@ -26,6 +26,7 @@ import {
   PhoneOutlined,
 } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
+import ProfileHeader from "../components/profileHeader";
 
 const createData = (
   id: string,
@@ -84,7 +85,7 @@ const Credentials = () => {
   };
   return (
     <>
-      <Header />
+      <ProfileHeader />
       <Container maxWidth="xl">
         <Grid container my={8} spacing={2}>
           <Grid item xs={12} lg={4}>
@@ -243,7 +244,7 @@ const Credentials = () => {
                         padding: "10px",
                       }}
                     />
-                    <Box display="flex" flexDirection="column" ml={2}>
+                    <Box display="flex" flexDirection="column" ml={2} onClick={() => navigate('/credentials/list')} style={{cursor: 'pointer'}}>
                       <Typography
                         variant="h4"
                         component="h1"
@@ -256,7 +257,7 @@ const Credentials = () => {
                           color: "#323842",
                           cursor: 'pointer'
                         }}
-                        onClick={() => navigate('/credentials/list')}
+                        
                       >
                         Data Science Skills
                       </Typography>
@@ -307,7 +308,7 @@ const Credentials = () => {
                         padding: "10px",
                       }}
                     />
-                    <Box display="flex" flexDirection="column" ml={2}>
+                    <Box display="flex" flexDirection="column" ml={2} onClick={() => navigate('/credentials/list')} style={{cursor: 'pointer'}}>
                       <Typography
                         variant="h4"
                         component="h1"
@@ -320,7 +321,6 @@ const Credentials = () => {
                           color: "#323842",
                           cursor: 'pointer'
                         }}
-                        onClick={() => navigate('/credentials/list')}
                       >
                         Master Degree Transcripts
                       </Typography>

@@ -9,8 +9,7 @@ export default function AboutSection() {
   const navigate = useNavigate();
 
   return (
-    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: { xs: '2rem', lg: '4rem' }, paddingX: { xs: '2rem', lg: '4rem' } }}
-    onClick = {() => (navigate('/profile/create'))}>
+    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: { xs: '2rem', lg: '4rem' }, paddingX: { xs: '2rem', lg: '4rem' }}}>
       <Grid container spacing={3}>
         {/* Left Side: Text Content */}
         <Grid item xs={12} md={5}>

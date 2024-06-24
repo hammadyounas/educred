@@ -30,6 +30,7 @@ import {
 } from "@mui/icons-material";
 import CustomTextField from "../components/common/Input";
 import { useNavigate } from "react-router-dom";
+import ProfileHeader from "../components/profileHeader";
 
 const createData = (
   id: string,
@@ -95,7 +96,7 @@ const CredentialsList = () => {
   const navigate = useNavigate();
   return (
     <>
-      <Header />
+      <ProfileHeader />
       <Container maxWidth="xl">
         <Grid container my={8} spacing={2}>
           <Grid item xs={12} lg={4}>

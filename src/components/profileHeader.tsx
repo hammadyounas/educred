@@ -40,7 +40,7 @@ const ProfileHeader: React.FC = () => {
       <Toolbar>
         <Grid container alignItems="center" justifyContent="space-between">
           <Grid item>
-            <img src="./logo.png" alt="Logo" style={{ marginRight: '20px', width: '20%' }} />
+            <img src="/logo.png" alt="Logo" style={{ marginRight: '20px', width: '20%' }} />
           </Grid>
           <Grid item xs>
             {matches ? (

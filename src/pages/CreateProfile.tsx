@@ -8,12 +8,13 @@ import WorkingExperience from "../components/pages/CreateProfile/WorkingExperien
 import Skills from "../components/pages/CreateProfile/Skills";
 import Education from "../components/pages/CreateProfile/Education";
 import { useNavigate } from "react-router-dom";
+import ProfileHeader from "../components/profileHeader";
 
 const CreateProfile = () => {
   const navigate = useNavigate();
   return (
     <>
-      <Header />
+      <ProfileHeader />
       <Container>
         <Box
           display="flex"

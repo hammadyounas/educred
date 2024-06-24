@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
-import Header from "../components/common/Header";
 import { Save } from "@mui/icons-material";
 import GeneralInformation from "../components/pages/CreateProfile/GeneralInformation";
 import About from "../components/pages/CreateProfile/About";

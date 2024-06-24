@@ -16,7 +16,6 @@ import {
   Tabs,
   Typography,
 } from "@mui/material";
-import Header from "../components/common/Header";
 import {
   Add,
   ApartmentOutlined,

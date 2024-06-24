@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 const AboutCard: React.FC = () => {
   const navigate = useNavigate();
   return (
-    <Box sx={{ padding: 2, border: '1px solid #e0e0e0', borderRadius: 2, height: '150px' }}
+    <Box sx={{ padding: 2, border: '1px solid #e0e0e0', borderRadius: 2, height: '150px', cursor: 'pointer' }}
     onClick = {() => (navigate('/profile/create'))}>
       <Container >
       <Grid container spacing={2}>

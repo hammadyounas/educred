@@ -136,7 +136,9 @@ const LoginWithEmail: React.FC = () => {
                 flex: 1,
               }}
             >
-              <CircularProgress />
+              <img src="/loading.png" alt= "Loading" style={{width: '50px', height:'50px', animation: 'spin 1s linear infinite', marginBottom: '20px'}} />
+
+              {/* <CircularProgress /> */}
               <Typography
                 sx={{
                   color: "#171A1F",

@@ -15,6 +15,31 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 // import blogimageone from "../assets/images/blogimageone.png";
 // import blogimagetwo from "../assets/images/blogimagetwo.png";
 // import blogimagethree from "../assets/images/blogimagethree.png";
+import styled from "@emotion/styled";
+
+const StyledIconButtonLeft = styled(IconButton)(({ theme }) => ({
+  borderRadius: "50%", // Make the button round
+  border: `1px solid #bcc1ca`, // Add a border with primary color
+  width: "36px", // Adjust width to make sure it's large enough for the icon
+  height: "36px", // Adjust height to make sure it's large enough for the icon
+  padding: "8px", // Increase padding to center the icon
+  // "&:hover": {
+  //   backgroundColor: "transparent", // Remove background color on hover
+  // },
+  position: 'relative'
+}));
+
+const StyledIconButtonRight = styled(IconButton)(({ theme }) => ({
+  borderRadius: "50%", // Make the button round
+  border: `1px solid #0095a9`, // Add a border with primary color
+  width: "36px", // Adjust width to make sure it's large enough for the icon
+  height: "36px", // Adjust height to make sure it's large enough for the icon
+  padding: "8px", // Increase padding to center the icon
+  // "&:hover": {
+  //   backgroundColor: "transparent", // Remove background color on hover
+  // },
+  position: 'relative'
+}));
 
 const BlogSection: React.FC = () => {
   return (
@@ -43,18 +68,21 @@ const BlogSection: React.FC = () => {
                 mt={2}
                 sx={{
                   display: "flex",
-                  justifyContent: "center",
+                  justifyContent: "end",
                   alignItems: "center",
                 }}
               >
-                <IconButton color="primary">
-                  <ArrowBackIosIcon
-                    sx={{ color: "grey.700", border: "grey.300" }}
+                {/* left arrow */}
+                <StyledIconButtonLeft color="primary">
+                  <ArrowBackIosIcon fontSize="small"
+                    sx={{ color: "#bcc1ca", position: 'absolute', left: '30%', top: '50%', transform: 'translateY(-50%)', }}
                   />
-                </IconButton>
-                <IconButton color="primary">
-                  <ArrowForwardIosIcon />
-                </IconButton>
+                </StyledIconButtonLeft>
+
+                {/* right arrow */}
+                <StyledIconButtonRight color="primary" sx={{ marginLeft: '10px' }} >
+                  <ArrowForwardIosIcon fontSize="small" style={{ position: 'absolute', left: '20%', top: '50%', transform: 'translateY(-50%)', }} />
+                </StyledIconButtonRight>
               </Box>
             </Box>
           </Grid>

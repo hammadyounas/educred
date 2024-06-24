@@ -14,7 +14,7 @@ const Features = () => {
           component="div"
           align="center"
           gutterBottom
-          sx={{ fontWeight: "bold", paddingBottom: "1rem" }}
+          sx={{ fontWeight: "bold", paddingBottom: "1rem", color: '#323842' }}
         >
           Features
         </Typography>
@@ -25,7 +25,7 @@ const Features = () => {
           alignItems="stretch"
         >
           <Grid item xs={12} sm={4} md={4}>
-            <Card style={{ backgroundColor: "#E0E7FF", height: "200px" }}>
+            <Card style={{ backgroundColor: "#c5d1f7", height: "200px" }}>
               <CardContent
                 style={{
                   display: "flex",
@@ -44,12 +44,12 @@ const Features = () => {
                   <Typography
                     variant="h5"
                     component="div"
-                    sx={{ fontWeight: "bold", paddingBottom: "1rem" }}
+                    sx={{ fontWeight: "bold", paddingBottom: "1rem", color: '#323842' }}
                   >
                     Request Transcripts
                     <Typography
                       variant="body2"
-                      color="text.secondary"
+                      color = '#323842'
                       sx={{ paddingTop: "1rem" }}
                     >
                       Easily request your academic transcripts from institutions
@@ -70,7 +70,7 @@ const Features = () => {
                 </div>
                 <img
                   src="/request.png"
-                  alt="Image 5"
+                  alt=" 5"
                   style={{
                     width: "20%",
                     display: "flex",
@@ -83,7 +83,7 @@ const Features = () => {
           </Grid>
 
           <Grid item xs={12} sm={8} md={8}>
-            <Card style={{ backgroundColor: "#A7F3D0", height: "200px" }}>
+            <Card style={{ backgroundColor: "#a6f5ff", height: "200px" }}>
               <CardContent
                 style={{
                   display: "flex",
@@ -102,12 +102,12 @@ const Features = () => {
                   <Typography
                     variant="h5"
                     component="div"
-                    sx={{ fontWeight: "bold" }}
+                    sx={{ fontWeight: "bold", color: '#323842' }}
                   >
                     Generate Credentials
                     <Typography
                       variant="body2"
-                      color="text.secondary"
+                      color = '#323842'
                       sx={{ paddingTop: "1rem" }}
                     >
                       Use our advanced NLP models to generate skill-based
@@ -137,7 +137,7 @@ const Features = () => {
                 >
                   <img
                     src="/credentials.png"
-                    alt="Jobs Image"
+                    alt="Jobs"
                     style={{ width: "90%", maxWidth: "150px" }}
                   />
                 </div>
@@ -146,7 +146,7 @@ const Features = () => {
           </Grid>
 
           <Grid item xs={12} sm={6} md={6}>
-            <Card style={{ backgroundColor: "#FED7D7", height: "200px" }}>
+            <Card style={{ backgroundColor: "#f5cbcb", height: "200px" }}>
               <CardContent
                 style={{
                   display: "flex",
@@ -166,12 +166,12 @@ const Features = () => {
                   <Typography
                     variant="h5"
                     component="div"
-                    sx={{ fontWeight: "bold" }}
+                    sx={{ fontWeight: "bold", color: '#323842' }}
                   >
                     Apply for Jobs
                     <Typography
                       variant="body2"
-                      color="text.secondary"
+                      color = '#323842'
                       sx={{ paddingTop: "1rem" }}
                     >
                       Attach your verified credentials to job applications and
@@ -201,7 +201,7 @@ const Features = () => {
                 >
                   <img
                     src="/jobs.png"
-                    alt="Jobs Image"
+                    alt="Jobs"
                     style={{ width: "90%", maxWidth: "150px" }}
                   />
                 </div>
@@ -210,7 +210,7 @@ const Features = () => {
           </Grid>
 
           <Grid item xs={12} sm={6} md={6}>
-            <Card style={{ backgroundColor: "#E9D8FD", height: "200px" }}>
+            <Card style={{ backgroundColor: "#f5f2fd", height: "200px" }}>
               <CardContent
                 style={{
                   display: "flex",
@@ -229,12 +229,12 @@ const Features = () => {
                   <Typography
                     variant="h5"
                     component="div"
-                    sx={{ fontWeight: "bold", paddingBottom: "1rem" }}
+                    sx={{ fontWeight: "bold", paddingBottom: "1rem", color: '#323842' }}
                   >
                     Credential Verification
                     <Typography
                       variant="body2"
-                      color="text.secondary"
+                      color = '#323842'
                       sx={{ paddingTop: "1rem" }}
                     >
                       Employers can securely verify your credentials using
@@ -257,7 +257,7 @@ const Features = () => {
                 </div>
                 <img
                   src="/verification.png"
-                  alt="Image 5"
+                  alt="5"
                   style={{
                     width: "20%",
                     display: "flex",

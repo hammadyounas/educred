@@ -8,7 +8,6 @@ import {
   Button,
   Container,
   Box,
-  Typography,
   useMediaQuery,
   useTheme,
 } from "@mui/material";
@@ -60,11 +59,11 @@ const Home = () => {
         >
           <img
             src="/container190.png"
-            alt="Image 1"
+            alt="1"
             style={{ width: "20%", marginBottom: "30px" }}
           />
-          <img src="/image230.png" alt="Image 2" style={{ width: "60%" }} />
-          <img src="/image233.png" alt="Image 2" style={{ width: "30%" }} />
+          <img src="/image230.png" alt="2" style={{ width: "60%" }} />
+          <img src="/image233.png" alt="3" style={{ width: "30%" }} />
         </Box>
 
         {/* Center Content */}
@@ -106,6 +105,7 @@ const Home = () => {
                   color: "white", // Change background color to white on hover
                 },
               }}
+              onClick={() => navigate("/signup")}
             >
               Signup
             </Button>
@@ -124,15 +124,15 @@ const Home = () => {
         >
           <img
             src="/image234.png"
-            alt="Image 4"
+            alt=" 4"
             style={{ width: "30%", marginBottom: "10px" }}
           />
           <img
             src="/container189.png"
-            alt="Image 7"
+            alt=" 7"
             style={{ width: "15%", marginBottom: "10px" }}
           />
-          <img src="/image235.png" alt="Image 6" style={{ width: "70%" }} />
+          <img src="/image235.png" alt=" 6" style={{ width: "70%" }} />
         </Box>
 
         {/* Bottom Images */}
@@ -147,10 +147,10 @@ const Home = () => {
         >
           <img
             src="/image236.png"
-            alt="Image 5"
+            alt=" 5"
             style={{ width: "10%", display: "flex", justifyContent: "center" }}
           />
-          <img src="/image237.png" alt="Image 3" style={{ width: "10%" }} />
+          <img src="/image237.png" alt=" 6" style={{ width: "10%" }} />
         </Box>
       </Container>
 

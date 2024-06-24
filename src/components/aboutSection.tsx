@@ -61,7 +61,7 @@ export default function AboutSection() {
                   <Typography variant="body1" sx={{ paddingLeft: "12px", color: '#00bdd6', fontSize: '0.8rem' , textTransform: 'capitalize'}}>Verify</Typography>
                 </Button>
                 <Button sx={{ display: 'flex', flexDirection: 'row',  justifyContent: 'start', paddingY: '0.5rem', bgcolor: '#fef9ee', borderRadius: '5px' , marginBottom: '5px' , cursor: 'pointer' }}>
-                  <ConnectWithoutContactIcon fontSize="small" sx={{ color: '#98690c',  paddingLeft: "5px" }} />
+                  <img src='/connectIcon.png' alt='connect icon' style={{ color: '#98690c',  paddingLeft: "5px", }} />
                   <Typography variant="body1" sx={{ paddingLeft: "12px", color: '#98690c', fontSize: '0.8rem' , textTransform: 'capitalize'}}>Connect</Typography>
                 </Button>
                 <Button sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'start',  paddingY: '0.5rem' , bgcolor: '#f5f2fd', borderRadius: '5px', cursor: 'pointer'}}>

@@ -25,6 +25,7 @@ import {
   ListAltOutlined,
   PhoneOutlined,
 } from "@mui/icons-material";
+import { useNavigate } from "react-router-dom";
 
 const createData = (
   id: string,
@@ -76,6 +77,7 @@ const rows = [
 
 const Credentials = () => {
   const [value, setValue] = React.useState("one");
+  const navigate = useNavigate();
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
@@ -120,6 +122,7 @@ const Credentials = () => {
                     style={{ color: "#00BDD6", border: "1px solid #00BDD6" }}
                     variant="outlined"
                     startIcon={<Edit />}
+                    onClick={() => navigate('/profile/create')}
                   >
                     Edit Profile
                   </Button>
@@ -128,6 +131,7 @@ const Credentials = () => {
                       backgroundColor: "#00BDD6",
                       border: "1px solid #00BDD6",
                     }}
+                    onClick={() => navigate('/credentials/list')}
                     startIcon={<Add />}
                   >
                     New Credentials
@@ -250,7 +254,9 @@ const Credentials = () => {
                           lineHeight: "22px",
                           fontSize: { xs: "14px" },
                           color: "#323842",
+                          cursor: 'pointer'
                         }}
+                        onClick={() => navigate('/credentials/list')}
                       >
                         Data Science Skills
                       </Typography>
@@ -312,7 +318,9 @@ const Credentials = () => {
                           lineHeight: "22px",
                           fontSize: { xs: "14px" },
                           color: "#323842",
+                          cursor: 'pointer'
                         }}
+                        onClick={() => navigate('/credentials/list')}
                       >
                         Master Degree Transcripts
                       </Typography>
@@ -355,6 +363,7 @@ const Credentials = () => {
                   textTransform: "capitalize",
                 }}
                 variant="text"
+                onClick={() => navigate('/credentials/list')}
               >
                 See all
               </Button>

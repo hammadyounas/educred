@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Button, Grid, Typography } from '@mui/material';
 import WifiIcon from '@mui/icons-material/Wifi';
 import ShareIcon from '@mui/icons-material/Share';
-import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import { useNavigate } from "react-router-dom";
 
 export default function AboutSection() {
@@ -10,7 +9,8 @@ export default function AboutSection() {
   const navigate = useNavigate();
 
   return (
-    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: { xs: '2rem', lg: '4rem' }, paddingX: { xs: '2rem', lg: '4rem' } }}>
+    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: { xs: '2rem', lg: '4rem' }, paddingX: { xs: '2rem', lg: '4rem' } }}
+    onClick = {() => (navigate('/profile/create'))}>
       <Grid container spacing={3}>
         {/* Left Side: Text Content */}
         <Grid item xs={12} md={5}>

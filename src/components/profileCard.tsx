@@ -5,6 +5,7 @@ import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
 // import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { ContentCopy } from '@mui/icons-material';
+import { useNavigate } from 'react-router-dom';
 
 const theme = createTheme({
   palette: {
@@ -24,6 +25,8 @@ const ProfileCard: React.FC = () => {
     navigator.clipboard.writeText('https://www.eudcred.com');
   };
 
+  const navigate = useNavigate();
+
   return (
     <ThemeProvider theme={theme}>
       <Box
@@ -35,7 +38,9 @@ const ProfileCard: React.FC = () => {
           boxShadow: 3,
           overflow: 'hidden',
           position: 'relative',
+          cursor: 'pointer',
         }}
+        onClick = {() => (navigate('/profile/create'))}
       >
         <Box
           sx={{
@@ -62,7 +67,8 @@ const ProfileCard: React.FC = () => {
         <Box sx={{ mt: 8, mb: 6, textAlign: 'center', px: 2 }}>
         <Typography
                       variant="h6"
-                      sx={{ fontWeight: "bold", color: "#00BDD6" }}
+                      sx={{ fontWeight: "bold", color: "#00BDD6", cursor: 'pointer' }}
+                      onClick = {() => (navigate('/settings'))}
                     >
                       Jay Rutherford
                     </Typography>
@@ -72,7 +78,8 @@ const ProfileCard: React.FC = () => {
           <Typography
                       variant="body2"
                       textAlign={"center"}
-                      sx={{ color: "#9095a0", marginTop: 1 }}
+                      sx={{ color: "#9095a0", marginTop: 1, cursor: 'pointer' }}
+                      onClick = {() => (navigate('/settings'))}
                     >
                       Computer Science master student graduated from Case
                       Western Reserve University
@@ -127,6 +134,7 @@ const ProfileCard: React.FC = () => {
             variant="contained"
             startIcon={<EditOutlinedIcon />}
             sx={{ mt: 8, width: '100%', color: 'white', textTransform: 'capitalize' }}
+            onClick = {() => (navigate('/profile/create'))}
           >
             Edit profile
           </Button>

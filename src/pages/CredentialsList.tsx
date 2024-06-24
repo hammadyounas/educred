@@ -29,6 +29,7 @@ import {
   RepeatOnOutlined,
 } from "@mui/icons-material";
 import CustomTextField from "../components/common/Input";
+import { useNavigate } from "react-router-dom";
 
 const createData = (
   id: string,
@@ -91,6 +92,7 @@ const rows = [
 ];
 
 const CredentialsList = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Header />
@@ -273,7 +275,9 @@ const CredentialsList = () => {
                         fontSize: { xs: "14px" },
                         color: "#565E6C",
                         marginLeft: "8px",
+                        cursor: "pointer",
                       }}
+                      onClick={() => navigate('/credentials/list')}
                     >
                       Pending Credentials
                     </Typography>

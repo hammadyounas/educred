@@ -4,6 +4,7 @@ import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import WorkIcon from '@mui/icons-material/Work';
 import { BookmarkAddOutlined, LanOutlined } from '@mui/icons-material';
+import { useNavigate } from 'react-router-dom';
 
 const useStyles = {
   verified: {
@@ -69,6 +70,7 @@ const skills = [
 
 const SkillCard: React.FC = () => {
   const [selectedTab, setSelectedTab] = useState(0);
+  const navigate = useNavigate();
 
   const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
     setSelectedTab(newValue);
@@ -76,7 +78,8 @@ const SkillCard: React.FC = () => {
 
   return (
     <Paper elevation={0} style={{ padding: '16px', border: 'none', boxShadow: 'none' }}>
-      <Typography variant="h6" style={{ fontWeight: 'bold', marginBottom: '1.5rem' }} gutterBottom>
+      <Typography variant="h6" style={{ fontWeight: 'bold', marginBottom: '1.5rem', cursor: 'pointer' }} gutterBottom
+      onClick = {() => (navigate('/credentials/create'))}>
         Skill
       </Typography>
       <Tabs

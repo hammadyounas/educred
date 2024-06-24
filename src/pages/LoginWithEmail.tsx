@@ -63,7 +63,7 @@ const LoginWithEmail: React.FC = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      navigate("/");
+      navigate("/profile");
     }, 1500);
   };
 

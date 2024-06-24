@@ -7,8 +7,10 @@ import About from "../components/pages/CreateProfile/About";
 import WorkingExperience from "../components/pages/CreateProfile/WorkingExperience";
 import Skills from "../components/pages/CreateProfile/Skills";
 import Education from "../components/pages/CreateProfile/Education";
+import { useNavigate } from "react-router-dom";
 
 const CreateProfile = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Header />
@@ -127,6 +129,7 @@ const CreateProfile = () => {
                   backgroundColor: "transparent",
                   padding: "12px",
                 }}
+                onClick = {() => (navigate('/credentials/create'))}
               >
                 Credential Skills
               </Typography>

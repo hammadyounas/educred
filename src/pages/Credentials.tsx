@@ -154,6 +154,7 @@ const Credentials = () => {
                       fontWeight: "500",
                       lineHeight: "22px",
                       fontSize: { xs: "14px" },
+                      color:'#bfc3c8' 
                     }}
                   >
                     @
@@ -174,7 +175,7 @@ const Credentials = () => {
                   </Typography>
                 </Box>
                 <Box display="flex" my={2}>
-                  <PhoneOutlined style={{ fontSize: "14px" }} />
+                  <PhoneOutlined style={{ fontSize: "14px", color:'#bfc3c8' }} />
                   <Typography
                     variant="h4"
                     component="h1"
@@ -191,7 +192,7 @@ const Credentials = () => {
                   </Typography>
                 </Box>
                 <Box display="flex">
-                  <ApartmentOutlined style={{ fontSize: "14px" }} />
+                  <img src='/addressIcon.png' alt='Address' style={{ fontSize: "14px" }} />
                   <Typography
                     variant="h4"
                     component="h1"
@@ -234,7 +235,8 @@ const Credentials = () => {
                   borderRadius={1}
                 >
                   <Box display="flex" alignItems="center">
-                    <ListAltOutlined
+                    <img
+                    src='/skillIcon.png' alt='skill icon'
                       style={{
                         background: "#F1F4FD",
                         width: "50px",
@@ -298,7 +300,7 @@ const Credentials = () => {
                   mt={1}
                 >
                   <Box display="flex" alignItems="center">
-                    <ListAltOutlined
+                    <img src='/transcriptIcon.png' alt='transcript icon'
                       style={{
                         background: "#FDF2F2",
                         width: "50px",

@@ -6,12 +6,14 @@ import {
   Container,
   Divider,
   Grid,
+  InputAdornment,
   Table,
   TableBody,
   TableCell,
   TableContainer,
   TableHead,
   TableRow,
+  TextField,
   Typography,
 } from "@mui/material";
 import {
@@ -127,7 +129,16 @@ const CredentialsList = () => {
                 >
                   Views
                 </Typography>
-                <ListAltOutlined />
+                {/* <ListAltOutlined /> */}
+                <img
+                          src="/listIcon.png"
+                          alt="Search Icon"
+                          style={{
+                            marginRight: "8px",
+                            width: "24px",
+                            height: "24px",
+                          }}
+                        />
               </Box>
               <Divider style={{ margin: "16px 0" }} />
               <Box display="flex" flexDirection="column" my={2}>
@@ -140,7 +151,16 @@ const CredentialsList = () => {
                   borderRadius={1}
                 >
                   <Box display="flex" alignItems="center">
-                    <FolderCopyOutlined />
+                    {/* <FolderCopyOutlined /> */}
+                    <img
+                          src="/credentialsIcon.png"
+                          alt="Search Icon"
+                          style={{
+                            marginRight: "8px",
+                            width: "24px",
+                            height: "24px",
+                          }}
+                        />
                     <Typography
                       variant="h4"
                       component="h1"
@@ -181,7 +201,16 @@ const CredentialsList = () => {
                   mt={2}
                 >
                   <Box display="flex" alignItems="center">
-                    <PeopleAltOutlined />
+                  <img
+                          src="/groupIcon.png"
+                          alt="Search Icon"
+                          style={{
+                            marginRight: "8px",
+                            width: "24px",
+                            height: "24px",
+                          }}
+                        />
+                    {/* <PeopleAltOutlined /> */}
                     <Typography
                       variant="h4"
                       component="h1"
@@ -222,7 +251,16 @@ const CredentialsList = () => {
                   mt={2}
                 >
                   <Box display="flex" alignItems="center">
-                    <RepeatOnOutlined />
+                  <img
+                          src="/unAssign.png"
+                          alt="Search Icon"
+                          style={{
+                            marginRight: "8px",
+                            width: "24px",
+                            height: "24px",
+                          }}
+                        />
+                    {/* <RepeatOnOutlined /> */}
                     <Typography
                       variant="h4"
                       component="h1"
@@ -263,7 +301,16 @@ const CredentialsList = () => {
                   mt={2}
                 >
                   <Box display="flex" alignItems="center">
-                    <DonutLargeOutlined />
+                  <img
+                          src="/pendingIcon.png"
+                          alt="Search Icon"
+                          style={{
+                            marginRight: "8px",
+                            width: "24px",
+                            height: "24px",
+                          }}
+                        />
+                    {/* <DonutLargeOutlined /> */}
                     <Typography
                       variant="h4"
                       component="h1"
@@ -277,7 +324,7 @@ const CredentialsList = () => {
                         marginLeft: "8px",
                         cursor: "pointer",
                       }}
-                      onClick={() => navigate('/credentials/list')}
+                      onClick={() => navigate("/credentials/list")}
                     >
                       Pending Credentials
                     </Typography>
@@ -306,7 +353,7 @@ const CredentialsList = () => {
                   mt={2}
                 >
                   <Box display="flex" alignItems="center">
-                    <DoneAllOutlined />
+                    <DoneAllOutlined style={{color: '#5e5e6c'}}/>
                     <Typography
                       variant="h4"
                       component="h1"
@@ -347,7 +394,16 @@ const CredentialsList = () => {
                   mt={2}
                 >
                   <Box display="flex" alignItems="center">
-                    <Delete />
+                    {/* <Delete /> */}
+                    <img
+                          src="/deleteIcon.png"
+                          alt="Search Icon"
+                          style={{
+                            marginRight: "8px",
+                            width: "24px",
+                            height: "24px",
+                          }}
+                        />
                     <Typography
                       variant="h4"
                       component="h1"
@@ -436,24 +492,77 @@ const CredentialsList = () => {
               my={2}
               sx={{ flexDirection: { xs: "column", sm: "row" } }}
             >
-              <Box width={250}>
-                <CustomTextField placeholder="Search" />
-              </Box>
-              <Button
-                style={{
+
+              {/* search field */}
+              {/* <Box sx={{ display: 'flex', alignItems: 'center', width: { xs: '100%', sm: '40%' } }}>
+              <img src="/searchIcon.png" alt="Search Icon" style={{ marginRight: '8px' }} />
+              <CustomTextField placeholder="Search" /> */}
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  width: { xs: "100%", sm: "40%" },
                   backgroundColor: "#EAECEF",
-                  color: "#171A1F",
-                  fontFamily: "Inter",
-                  fontWeight: "400",
-                  fontSize: "14px",
-                  textTransform: "capitalize",
-                  padding: "16px",
+                  borderRadius: "5px",
+                  cursor: "pointer",
                 }}
-                startIcon={<FilterList />}
-                endIcon={<ArrowDownward />}
               >
-                Sort: Last updated
-              </Button>
+                <TextField
+                  fullWidth
+                  placeholder="Search"
+                  variant="outlined"
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position="start">
+                        <img
+                          src="/searchIcon.png"
+                          alt="Search Icon"
+                          style={{
+                            marginRight: "8px",
+                            width: "24px",
+                            height: "24px",
+                          }}
+                        />
+                      </InputAdornment>
+                    ),
+                    sx: {
+                      pr: "24px",
+                      "& .MuiOutlinedInput-root": {
+                        border: "none", // Remove default border
+                      },
+                     
+                    }, // Adding padding to the right side to accommodate the icon
+                  }}
+                />
+              </Box>
+              <Box
+                style={{ display: "flex", alignItems: "center", gap: "5px" }}  sx={{marginTop: { xs: "16px", sm: "0" } }}
+              >
+                <img
+                  src="/preferencesIcon.png"
+                  alt="preferences"
+                  style={{
+                    backgroundColor: "#EAECEF",
+                    borderRadius: "5px",
+                    padding: "16px",
+                  }}
+                />
+                <Button
+                  style={{
+                    backgroundColor: "#EAECEF",
+                    color: "#171A1F",
+                    fontFamily: "Inter",
+                    fontWeight: "400",
+                    fontSize: "14px",
+                    textTransform: "capitalize",
+                    padding: "16px",
+                  }}
+                  startIcon={<FilterList />}
+                  endIcon={<ArrowDownward />}
+                >
+                  Sort: Last updated
+                </Button>
+              </Box>
             </Box>
             <TableContainer>
               <Table aria-label="custom table">
@@ -468,6 +577,8 @@ const CredentialsList = () => {
                         fontWeight: "600",
                         fontSize: "14px",
                         color: "#171A1F",
+                        textAlign: 'center',
+                        paddingLeft: '3rem',
                       }}
                     >
                       ID

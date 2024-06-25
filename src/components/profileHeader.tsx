@@ -9,8 +9,10 @@ import {
   Grid,
   useMediaQuery,
   Theme,
+  Box,
 } from '@mui/material';
 import {
+  KeyboardArrowDownOutlined,
   MessageOutlined as MessageIcon,
   NotificationsOutlined as NotificationsIcon,
 } from '@mui/icons-material';
@@ -76,7 +78,10 @@ const ProfileHeader: React.FC = () => {
                 </IconButton>
               </Grid>
               <Grid item>
-                <Avatar alt="User" src="./settingsAvatar.png" onClick={() => navigate('/profile/create')}/>
+                <Box sx={{display: 'flex', alignItems: 'center',}}>
+                <Avatar alt="User" src="/avatar.png" onClick={() => navigate('/profile/create')}/>
+                <KeyboardArrowDownOutlined sx={{color: '#b2b6be', cursor: 'pointer'}}/>
+                </Box>
               </Grid>
             </Grid>
           </Grid>

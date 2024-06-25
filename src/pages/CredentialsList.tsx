@@ -154,7 +154,7 @@ const CredentialsList = () => {
                     {/* <FolderCopyOutlined /> */}
                     <img
                           src="/credentialsIcon.png"
-                          alt="Search Icon"
+                          alt="credentials Icon"
                           style={{
                             marginRight: "8px",
                             width: "24px",
@@ -203,7 +203,7 @@ const CredentialsList = () => {
                   <Box display="flex" alignItems="center">
                   <img
                           src="/groupIcon.png"
-                          alt="Search Icon"
+                          alt="Group Icon"
                           style={{
                             marginRight: "8px",
                             width: "24px",
@@ -253,7 +253,7 @@ const CredentialsList = () => {
                   <Box display="flex" alignItems="center">
                   <img
                           src="/unAssign.png"
-                          alt="Search Icon"
+                          alt="Un Assign Icon"
                           style={{
                             marginRight: "8px",
                             width: "24px",
@@ -303,7 +303,7 @@ const CredentialsList = () => {
                   <Box display="flex" alignItems="center">
                   <img
                           src="/pendingIcon.png"
-                          alt="Search Icon"
+                          alt="Pending Icon"
                           style={{
                             marginRight: "8px",
                             width: "24px",
@@ -397,7 +397,7 @@ const CredentialsList = () => {
                     {/* <Delete /> */}
                     <img
                           src="/deleteIcon.png"
-                          alt="Search Icon"
+                          alt="Delete Icon"
                           style={{
                             marginRight: "8px",
                             width: "24px",
@@ -480,6 +480,9 @@ const CredentialsList = () => {
                   border: "1px solid #00BDD6",
                   color: "#fff",
                 }}
+                sx={{
+                  fontSize: {xs: '0.6rem', sm: '1rem'},
+                }}
                 startIcon={<Add />}
               >
                 CREATE NEW
@@ -519,14 +522,14 @@ const CredentialsList = () => {
                           alt="Search Icon"
                           style={{
                             marginRight: "8px",
-                            width: "24px",
-                            height: "24px",
+                            width: "20px",
+                            height: "20px",
                           }}
                         />
                       </InputAdornment>
                     ),
                     sx: {
-                      pr: "24px",
+                      pr: "18px",
                       "& .MuiOutlinedInput-root": {
                         border: "none", // Remove default border
                       },
@@ -544,7 +547,7 @@ const CredentialsList = () => {
                   style={{
                     backgroundColor: "#EAECEF",
                     borderRadius: "5px",
-                    padding: "16px",
+                    padding: "18px",
                   }}
                 />
                 <Button
@@ -578,7 +581,19 @@ const CredentialsList = () => {
                         fontSize: "14px",
                         color: "#171A1F",
                         textAlign: 'center',
-                        paddingLeft: '3rem',
+                        // paddingLeft: '3rem',
+                      }}
+                    >
+                      
+                    </TableCell>
+                    <TableCell
+                      sx={{
+                        fontFamily: "Epilogue",
+                        fontWeight: "600",
+                        fontSize: "14px",
+                        color: "#171A1F",
+                        // textAlign: 'center',
+                        // paddingLeft: '3rem',
                       }}
                     >
                       ID
@@ -689,6 +704,9 @@ const CredentialsList = () => {
                             ? "Pend"
                             : "Verified"}
                         </Button>
+                        {/* {row.id} */}
+                      </TableCell>
+                      <TableCell >
                         {row.id}
                       </TableCell>
                       <TableCell

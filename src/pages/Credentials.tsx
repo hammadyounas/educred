@@ -402,7 +402,8 @@ const Credentials = () => {
                 <Tab value="two" label="Skills Credentials (12)" />
                 <Tab value="three" label="Pending Credentials" />
               </Tabs>
-              <FilterAltOutlined />
+              <img src='/filter.png' alt="filter" style={{ cursor: 'pointer', padding: '10px', backgroundColor: '#eaecef', borderRadius: '5px'}} />
+              {/* <FilterAltOutlined /> */}
             </Box>
             <TableContainer>
               <Table aria-label="custom table">

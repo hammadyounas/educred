@@ -1,8 +1,7 @@
 // ProfileCard.tsx
 import React from 'react';
-import { Avatar, Button, Chip, Grid, Typography, Link, Box, InputBase, IconButton, Paper, Divider } from '@mui/material';
+import { Avatar, Button, Chip, Grid, Typography, Box, InputBase, IconButton, Divider } from '@mui/material';
 import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
-// import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { ContentCopy } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
@@ -21,9 +20,6 @@ const theme = createTheme({
 });
 
 const ProfileCard: React.FC = () => {
-  const handleCopyLink = () => {
-    navigator.clipboard.writeText('https://www.eudcred.com');
-  };
 
   const navigate = useNavigate();
 

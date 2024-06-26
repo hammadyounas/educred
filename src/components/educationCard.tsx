@@ -1,7 +1,5 @@
 import React from 'react';
 import { Box, Card, CardContent, Grid, Typography, Avatar, Chip, Container } from '@mui/material';
-import SchoolIcon from '@mui/icons-material/School';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import { BookmarkAddOutlined, SchoolOutlined } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';

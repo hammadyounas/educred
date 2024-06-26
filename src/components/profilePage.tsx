@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Box, Typography, Avatar, Button, Link, List, ListItem, ListItemAvatar, ListItemText, Divider } from '@mui/material';
+import { Grid, Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { Theme } from '@mui/material/styles';
 import ProfileCard from './profileCard';

@@ -1,9 +1,6 @@
 import React from "react";
 import Features from "../components/features";
 import BlogSection from "../components/blogSection";
-// import bigLogo from "../assets/images/bigLogo.png";
-// import bigLogo from "../../public/bigLogo.png";
-// import textImage from "../assets/images/EmpowerText.png";
 import {
   Button,
   Container,
@@ -11,24 +8,14 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-// import image1 from "../assets/images/Image 230.png";
-// import image2 from "../assets/images/Image 233.png";
-// import image3 from "../assets/images/Image 234.png";
-// import image4 from "../assets/images/Image 235.png";
-// import image5 from "../assets/images/Image 236.png";
-// import image6 from "../assets/images/Image 237.png";
-// import image7 from "../assets/images/Container 189.png";
-// import image8 from "../assets/images/Container 190.png";
 import GetStarted from "../components/getStarted";
 import AboutSection from "../components/aboutSection";
 import Header from "../components/common/Header";
-import { useNavigate } from "react-router-dom";
 import Footer from "../components/common/Footer";
 
 const Home = () => {
   const theme = useTheme();
   const isLargeScreen = useMediaQuery(theme.breakpoints.up("lg")); // Check for large screens using 'lg' breakpoint
-  const navigate = useNavigate();
 
   return (
     <>
@@ -60,11 +47,11 @@ const Home = () => {
         >
           <img
             src="/container190.png"
-            alt="1"
+            alt="example 1"
             style={{ width: "20%", marginBottom: "30px" }}
           />
-          <img src="/image230.png" alt="2" style={{ width: "60%" }} />
-          <img src="/image233.png" alt="3" style={{ width: "30%" }} />
+          <img src="/image230.png" alt="example 2" style={{ width: "60%" }} />
+          <img src="/image233.png" alt="example 2" style={{ width: "30%" }} />
         </Box>
 
         {/* Center Content */}
@@ -125,15 +112,15 @@ const Home = () => {
         >
           <img
             src="/image234.png"
-            alt=" 4"
+            alt="example 4"
             style={{ width: "30%", marginBottom: "10px" }}
           />
           <img
             src="/container189.png"
-            alt=" 7"
+            alt="example 7"
             style={{ width: "15%", marginBottom: "10px" }}
           />
-          <img src="/image235.png" alt=" 6" style={{ width: "70%" }} />
+          <img src="/image235.png" alt="example 6" style={{ width: "70%" }} />
         </Box>
 
         {/* Bottom Images */}
@@ -148,10 +135,10 @@ const Home = () => {
         >
           <img
             src="/image236.png"
-            alt=" 5"
+            alt="example 5"
             style={{ width: "10%", display: "flex", justifyContent: "center" }}
           />
-          <img src="/image237.png" alt=" 6" style={{ width: "10%" }} />
+          <img src="/image237.png" alt="example 3" style={{ width: "10%" }} />
         </Box>
       </Container>
 

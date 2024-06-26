@@ -17,7 +17,7 @@ import {
   Tabs,
   Tab,
 } from "@mui/material";
-import { Edit, ContentCopy, Label } from "@mui/icons-material";
+import { Edit, ContentCopy } from "@mui/icons-material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { styled } from "@mui/system";
 import ProfileHeader from "./profileHeader";

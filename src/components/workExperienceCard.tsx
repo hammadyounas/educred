@@ -1,8 +1,6 @@
 import React from 'react';
 import { Card, CardContent, Typography, Grid, Avatar, Chip, Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import WorkIcon from '@mui/icons-material/Work';
-import BusinessIcon from '@mui/icons-material/Business';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import { BookmarkAddedOutlined, HomeOutlined } from '@mui/icons-material';
 

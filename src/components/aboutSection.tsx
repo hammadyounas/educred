@@ -2,11 +2,9 @@ import React from 'react';
 import { Box, Button, Grid, Typography } from '@mui/material';
 import WifiIcon from '@mui/icons-material/Wifi';
 import ShareIcon from '@mui/icons-material/Share';
-import { useNavigate } from "react-router-dom";
 
 export default function AboutSection() {
 
-  const navigate = useNavigate();
 
   return (
     <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: { xs: '2rem', lg: '4rem' }, paddingX: { xs: '2rem', lg: '4rem' }}}>
@@ -24,9 +22,8 @@ export default function AboutSection() {
             <Typography variant="body1" paragraph sx={{ color: '#323842', fontSize: { lg: '1rem', xs: '0.8rem', paddingTop: '1rem' } }}>
               At EduCred, we believe in the power of verified credentials to unlock your future potential. Our mission is to create a secure, reliable, and user-friendly platform that bridges the gap between education and employment. With EduCred, students can seamlessly request their transcripts, have them verified by institutions, and generate verifiable digital credentials using advanced natural language processing and blockchain technology.
             </Typography>
-            <Button variant="outlined" sx={{ color: '#00BDD6', bgcolor: 'white', textTransform: 'capitalize', borderRadius: 23, paddingX: { lg: 8, xs: 4 }, marginTop: 3, cursor: 'pointer' }}
-            onClick={() => navigate("/signup")}>
-              Signup
+            <Button variant="outlined" sx={{ color: '#00BDD6', bgcolor: 'white', textTransform: 'capitalize', borderRadius: 23, paddingX: { lg: 8, xs: 4 }, marginTop: 3, cursor: 'pointer' }}>
+              Learn more
             </Button>
           </Box>
         </Grid>

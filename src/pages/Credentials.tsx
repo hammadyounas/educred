@@ -399,7 +399,7 @@ const Credentials = () => {
               >
                 <Tab value="one" label="Transcripts" />
                 <Tab value="two" label="Skills Credentials (12)" />
-                <Tab value="three" label="Pending Credentials" />
+                <Tab  onClick={() => navigate("/credentials/list")} value="three" label="Pending Credentials" />
               </Tabs>
               <img src='/filter.png' alt="filter" style={{ cursor: 'pointer', padding: '10px', backgroundColor: '#eaecef', borderRadius: '5px'}} />
               {/* <FilterAltOutlined /> */}

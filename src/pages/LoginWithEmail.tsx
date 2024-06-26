@@ -6,7 +6,7 @@ import {
   Typography,
   IconButton,
   Grid,
-  CircularProgress,
+  // CircularProgress,
   FormControlLabel,
   Checkbox,
 } from "@mui/material";
@@ -63,7 +63,7 @@ const LoginWithEmail: React.FC = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      navigate("/");
+      navigate("/profile");
     }, 1500);
   };
 
@@ -136,7 +136,9 @@ const LoginWithEmail: React.FC = () => {
                 flex: 1,
               }}
             >
-              <CircularProgress />
+              <img src="/loading.png" alt= "Loading" style={{width: '50px', height:'50px', animation: 'spin 1s linear infinite', marginBottom: '20px'}} />
+
+              {/* <CircularProgress /> */}
               <Typography
                 sx={{
                   color: "#171A1F",

@@ -32,6 +32,7 @@ const Home = () => {
           gridTemplateColumns: isLargeScreen ? "repeat(3, 1fr)" : "1fr", // Adjust grid columns based on screen size
           gridTemplateRows: "auto 1fr auto",
           gap: "10px",
+          maxWidth: '3500px'
         }}
       >
         {/* Left Column Images */}
@@ -92,6 +93,7 @@ const Home = () => {
                   color: "white", // Change background color to white on hover
                 },
               }}
+              onClick={() => navigate("/signup")}
             >
               Signup
             </Button>

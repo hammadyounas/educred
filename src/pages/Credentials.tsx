@@ -16,7 +16,6 @@ import {
   Tabs,
   Typography,
 } from "@mui/material";
-import Header from "../components/common/Header";
 import {
   Add,
   ApartmentOutlined,
@@ -25,6 +24,8 @@ import {
   ListAltOutlined,
   PhoneOutlined,
 } from "@mui/icons-material";
+import { useNavigate } from "react-router-dom";
+import ProfileHeader from "../components/profileHeader";
 
 const createData = (
   id: string,
@@ -76,13 +77,14 @@ const rows = [
 
 const Credentials = () => {
   const [value, setValue] = React.useState("one");
+  const navigate = useNavigate();
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
   };
   return (
     <>
-      <Header />
+      <ProfileHeader />
       <Container maxWidth="xl">
         <Grid container my={8} spacing={2}>
           <Grid item xs={12} lg={4}>
@@ -120,6 +122,7 @@ const Credentials = () => {
                     style={{ color: "#00BDD6", border: "1px solid #00BDD6" }}
                     variant="outlined"
                     startIcon={<Edit />}
+                    onClick={() => navigate('/profile/create')}
                   >
                     Edit Profile
                   </Button>
@@ -128,6 +131,7 @@ const Credentials = () => {
                       backgroundColor: "#00BDD6",
                       border: "1px solid #00BDD6",
                     }}
+                    onClick={() => navigate('/credentials/list')}
                     startIcon={<Add />}
                   >
                     New Credentials
@@ -150,6 +154,7 @@ const Credentials = () => {
                       fontWeight: "500",
                       lineHeight: "22px",
                       fontSize: { xs: "14px" },
+                      color:'#bfc3c8' 
                     }}
                   >
                     @
@@ -170,7 +175,7 @@ const Credentials = () => {
                   </Typography>
                 </Box>
                 <Box display="flex" my={2}>
-                  <PhoneOutlined style={{ fontSize: "14px" }} />
+                  <PhoneOutlined style={{ fontSize: "14px", color:'#bfc3c8' }} />
                   <Typography
                     variant="h4"
                     component="h1"
@@ -187,7 +192,7 @@ const Credentials = () => {
                   </Typography>
                 </Box>
                 <Box display="flex">
-                  <ApartmentOutlined style={{ fontSize: "14px" }} />
+                  <img src='/addressIcon.png' alt='Address' style={{ fontSize: "14px" }} />
                   <Typography
                     variant="h4"
                     component="h1"
@@ -230,7 +235,8 @@ const Credentials = () => {
                   borderRadius={1}
                 >
                   <Box display="flex" alignItems="center">
-                    <ListAltOutlined
+                    <img
+                    src='/skillIcon.png' alt='skill icon'
                       style={{
                         background: "#F1F4FD",
                         width: "50px",
@@ -239,7 +245,7 @@ const Credentials = () => {
                         padding: "10px",
                       }}
                     />
-                    <Box display="flex" flexDirection="column" ml={2}>
+                    <Box display="flex" flexDirection="column" ml={2} onClick={() => navigate('/credentials/list')} style={{cursor: 'pointer'}}>
                       <Typography
                         variant="h4"
                         component="h1"
@@ -250,7 +256,9 @@ const Credentials = () => {
                           lineHeight: "22px",
                           fontSize: { xs: "14px" },
                           color: "#323842",
+                          cursor: 'pointer'
                         }}
+                        
                       >
                         Data Science Skills
                       </Typography>
@@ -292,7 +300,7 @@ const Credentials = () => {
                   mt={1}
                 >
                   <Box display="flex" alignItems="center">
-                    <ListAltOutlined
+                    <img src='/transcriptIcon.png' alt='transcript icon'
                       style={{
                         background: "#FDF2F2",
                         width: "50px",
@@ -301,7 +309,7 @@ const Credentials = () => {
                         padding: "10px",
                       }}
                     />
-                    <Box display="flex" flexDirection="column" ml={2}>
+                    <Box display="flex" flexDirection="column" ml={2} onClick={() => navigate('/credentials/list')} style={{cursor: 'pointer'}}>
                       <Typography
                         variant="h4"
                         component="h1"
@@ -312,6 +320,7 @@ const Credentials = () => {
                           lineHeight: "22px",
                           fontSize: { xs: "14px" },
                           color: "#323842",
+                          cursor: 'pointer'
                         }}
                       >
                         Master Degree Transcripts
@@ -355,6 +364,7 @@ const Credentials = () => {
                   textTransform: "capitalize",
                 }}
                 variant="text"
+                onClick={() => navigate('/credentials/list')}
               >
                 See all
               </Button>
@@ -394,7 +404,8 @@ const Credentials = () => {
                 <Tab value="two" label="Skills Credentials (12)" />
                 <Tab value="three" label="Pending Credentials" />
               </Tabs>
-              <FilterAltOutlined />
+              <img src='/filter.png' alt="filter" style={{ cursor: 'pointer', padding: '10px', backgroundColor: '#eaecef', borderRadius: '5px'}} />
+              {/* <FilterAltOutlined /> */}
             </Box>
             <TableContainer>
               <Table aria-label="custom table">

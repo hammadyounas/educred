@@ -9,12 +9,15 @@ import {
   Grid,
   useMediaQuery,
   Theme,
+  Box,
 } from '@mui/material';
 import {
+  KeyboardArrowDownOutlined,
   MessageOutlined as MessageIcon,
   NotificationsOutlined as NotificationsIcon,
 } from '@mui/icons-material';
 import { styled } from '@mui/system';
+import { useNavigate } from 'react-router-dom';
 
 const StyledTab = styled(Tab)(({ theme }) => ({
   minWidth: 10,
@@ -28,6 +31,7 @@ const StyledTab = styled(Tab)(({ theme }) => ({
 const ProfileHeader: React.FC = () => {
   const [selectedTab, setSelectedTab] = React.useState(0);
   const matches = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'));
+  const navigate = useNavigate();
 
   const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
     setSelectedTab(newValue);
@@ -38,13 +42,13 @@ const ProfileHeader: React.FC = () => {
       <Toolbar>
         <Grid container alignItems="center" justifyContent="space-between">
           <Grid item>
-            <img src="./logo.png" alt="Logo" style={{ marginRight: '20px', width: '20%' }} />
+            <img src="/logo.png" alt="Logo" style={{ marginRight: '20px', width: '20%' }} />
           </Grid>
           <Grid item xs>
             {matches ? (
               <Tabs value={selectedTab} onChange={handleChange} centered sx={{ textTransform: 'capitalize' }}>
                 <StyledTab label="Home" />
-                <StyledTab label="Credentials" />
+                <StyledTab label="Credentials"  />
                 <StyledTab label="All Jobs" />
                 <StyledTab label="Companies" />
                 <StyledTab label="People" />
@@ -52,8 +56,8 @@ const ProfileHeader: React.FC = () => {
               </Tabs>
             ) : (
               <Tabs value={selectedTab} onChange={handleChange} sx={{ marginLeft: '-15rem', textTransform: 'capitalize' }}>
-                <StyledTab label="Home" />
-                <StyledTab label="Credentials" />
+                <StyledTab label="Home" onClick={() => navigate('/profile')}/>
+                <StyledTab label="Credentials" onClick={() => navigate('/credentials/create')}/>
                 <StyledTab label="All Jobs" />
                 <StyledTab label="Companies" />
                 <StyledTab label="People" />
@@ -74,7 +78,10 @@ const ProfileHeader: React.FC = () => {
                 </IconButton>
               </Grid>
               <Grid item>
-                <Avatar alt="User" src="./settingsAvatar.png" />
+                <Box sx={{display: 'flex', alignItems: 'center',}}>
+                <Avatar alt="User" src="/avatar.png" onClick={() => navigate('/profile/create')}/>
+                <KeyboardArrowDownOutlined sx={{color: '#b2b6be', cursor: 'pointer'}}/>
+                </Box>
               </Grid>
             </Grid>
           </Grid>

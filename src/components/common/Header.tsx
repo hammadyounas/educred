@@ -123,6 +123,7 @@ function Header() {
                   textTransform: "capitalize",
                   borderRadius: 23,
                 }}
+                onClick={() => navigate("/signup")}
               >
                 Signup
               </Button>

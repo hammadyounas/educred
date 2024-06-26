@@ -6,7 +6,7 @@ import {
   Typography,
   IconButton,
   Grid,
-  CircularProgress,
+  // CircularProgress,
 } from "@mui/material";
 import {
   Visibility,
@@ -137,7 +137,8 @@ const SignUpWithEmail: React.FC = () => {
                 flex: 1,
               }}
             >
-              <CircularProgress />
+              {/* <CircularProgress /> */}
+              <img src="/loading.png" alt= "Loading" style={{width: '50px', height:'50px', animation: 'spin 1s linear infinite', marginBottom: '20px'}} />
               <Typography
                 sx={{
                   color: "#171A1F",

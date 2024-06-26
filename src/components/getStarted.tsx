@@ -1,7 +1,10 @@
 import { Container, Box, Typography, Button } from '@mui/material';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function GetStarted() {
+  const navigate = useNavigate();
+
   return (
     <Container>
       <Box
@@ -31,7 +34,7 @@ export default function GetStarted() {
               borderRadius: 23,
               paddingX: { lg: 8, xs: 4 },
             }}
-          >
+            onClick={() => navigate("/signup")}>
             Signup
           </Button>
         </Box>

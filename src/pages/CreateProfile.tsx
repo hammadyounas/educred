@@ -1,17 +1,19 @@
 import React from "react";
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
-import Header from "../components/common/Header";
 import { Save } from "@mui/icons-material";
 import GeneralInformation from "../components/pages/CreateProfile/GeneralInformation";
 import About from "../components/pages/CreateProfile/About";
 import WorkingExperience from "../components/pages/CreateProfile/WorkingExperience";
 import Skills from "../components/pages/CreateProfile/Skills";
 import Education from "../components/pages/CreateProfile/Education";
+import { useNavigate } from "react-router-dom";
+import ProfileHeader from "../components/profileHeader";
 
 const CreateProfile = () => {
+  const navigate = useNavigate();
   return (
     <>
-      <Header />
+      <ProfileHeader />
       <Container>
         <Box
           display="flex"
@@ -127,6 +129,7 @@ const CreateProfile = () => {
                   backgroundColor: "transparent",
                   padding: "12px",
                 }}
+                onClick = {() => (navigate('/credentials/create'))}
               >
                 Credential Skills
               </Typography>

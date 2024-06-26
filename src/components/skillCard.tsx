@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { Tabs, Tab, Grid, Paper, Typography, Box } from '@mui/material';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
-import VerifiedIcon from '@mui/icons-material/Verified';
-import WorkIcon from '@mui/icons-material/Work';
 import { BookmarkAddOutlined, LanOutlined } from '@mui/icons-material';
 
 const useStyles = {

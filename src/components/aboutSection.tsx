@@ -17,7 +17,7 @@ export default function AboutSection() {
             <Typography variant="h3" component="div" gutterBottom sx={{ fontWeight: 'bold' }}>
               About Us
             </Typography>
-            <img src="/about.png" alt="About Us Image" style={{ maxWidth: '40%', height: 'auto' }} />
+            <img src="/about.png" alt="About Us" style={{ maxWidth: '40%', height: 'auto' }} />
             <Typography variant="body1" paragraph sx={{ color: '#323842', fontSize: { lg: '1rem', xs: '0.8rem', paddingTop: '1rem' } }}>
               At EduCred, we believe in the power of verified credentials to unlock your future potential. Our mission is to create a secure, reliable, and user-friendly platform that bridges the gap between education and employment. With EduCred, students can seamlessly request their transcripts, have them verified by institutions, and generate verifiable digital credentials using advanced natural language processing and blockchain technology.
             </Typography>
@@ -32,7 +32,7 @@ export default function AboutSection() {
           <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', position: 'relative' }}>
             <img
               src='/aboutImage.png'
-              alt="About Us Image"
+              alt="About Us"
               style={{
                 width: '50%', // Default width
                 height: 'auto', // Maintain aspect ratio
@@ -44,7 +44,7 @@ export default function AboutSection() {
             <Box sx={{ position: 'absolute', display: {sm: 'block', xs: 'none'}, top: '40%', left: '10%', textAlign: 'center', backgroundColor: 'white', width: {md: '20%', xs: '30%'}, paddingY: '15px', borderRadius: '10px',  boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
               <img
                 src='/eduCredText.png'
-                alt="About Us Image"
+                alt="About Us"
                 style={{
                   width: '50%', // Adjusted width for responsiveness
                   height: 'auto', // Maintain aspect ratio

@@ -10,23 +10,6 @@ const data = [
   { week: 'w4', views: 3 }
 ];
 
-const AnalyticsCard: React.FC<{ title: string, value: number, description: string, Icon: React.ReactNode }> = ({ title, value, description, Icon }) => (
-  <Card sx={{ height: '100%' }}>
-    <CardContent>
-      <Grid container alignItems="center" justifyContent="center" style={{ height: '100%' }}>
-        <Grid item xs={2}>
-          {Icon}
-        </Grid>
-        <Grid item xs={10}>
-          <Typography variant="h6">{value}</Typography>
-          <Typography variant="body2">{title}</Typography>
-          <Typography variant="body2" color="textSecondary">{description}</Typography>
-        </Grid>
-      </Grid>
-    </CardContent>
-  </Card>
-);
-
 const Analytics: React.FC = () => {
   return (
     <Box p={3}>

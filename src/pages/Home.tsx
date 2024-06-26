@@ -12,9 +12,11 @@ import GetStarted from "../components/getStarted";
 import AboutSection from "../components/aboutSection";
 import Header from "../components/common/Header";
 import Footer from "../components/common/Footer";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const theme = useTheme();
+  const navigate = useNavigate();
   const isLargeScreen = useMediaQuery(theme.breakpoints.up("lg")); // Check for large screens using 'lg' breakpoint
 
   return (

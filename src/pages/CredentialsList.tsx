@@ -20,16 +20,9 @@ import {
   Add,
   ArrowDownward,
   ArrowForward,
-  Delete,
   DoneAllOutlined,
-  DonutLargeOutlined,
   FilterList,
-  FolderCopyOutlined,
-  ListAltOutlined,
-  PeopleAltOutlined,
-  RepeatOnOutlined,
 } from "@mui/icons-material";
-import CustomTextField from "../components/common/Input";
 import { useNavigate } from "react-router-dom";
 import ProfileHeader from "../components/profileHeader";
 
